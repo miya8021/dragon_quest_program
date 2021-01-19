@@ -9,7 +9,7 @@ monster = Monster.new(name: "アークデーモン", hp: 210, offense: 140, defe
 puts "#{monster.name}があらわれた！"
 
 #ループ処理
-while monster.hp > 0
+while monster.hp > 0 && brave.hp > 0 do
   brave.attack(monster)
   monster.attack(brave)
   puts <<~TEXT
@@ -19,3 +19,4 @@ while monster.hp > 0
   *=*=*=*=*=*=*=*=*=*=*
   TEXT
 end
+
